@@ -66,3 +66,51 @@ werkzeug.exceptions.UnsupportedMediaType: 415 Unsupported Media Type: Did not at
 2025-12-22 11:24:31,893 - INFO - root - POST /items aufgerufen mit Daten: {'name': 'NeuesItem'}
 2025-12-22 11:24:31,893 - INFO - root - Item hinzugefügt: NeuesItem
 2025-12-22 11:24:31,893 - INFO - werkzeug - 127.0.0.1 - - [22/Dec/2025 11:24:31] "[35m[1mPOST /items HTTP/1.1[0m" 201 -
+2025-12-22 12:06:11,707 - INFO - root - Server gestartet auf Port 5000
+2025-12-22 12:06:11,707 - WARNING - root - Etwas könnte schiefgehen
+2025-12-22 12:06:11,707 - ERROR - root - Ein Fehler ist aufgetreten
+2025-12-22 12:06:11,708 - CRITICAL - root - Schwerwiegender Fehler, Abbruch nötig
+2025-12-22 12:07:27,186 - INFO - root - Server gestartet auf Port 5000
+2025-12-22 12:07:27,186 - WARNING - root - Etwas könnte schiefgehen
+2025-12-22 12:07:27,187 - ERROR - root - Ein Fehler ist aufgetreten
+2025-12-22 12:07:27,187 - CRITICAL - root - Schwerwiegender Fehler, Abbruch nötig
+2025-12-22 12:07:27,217 - INFO - app - Flask App erfolgreich gestartet
+2025-12-22 12:07:27,275 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-22 12:07:27,275 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2025-12-22 12:07:27,276 - INFO - werkzeug -  * Restarting with stat
+2025-12-22 12:07:27,674 - INFO - root - Server gestartet auf Port 5000
+2025-12-22 12:07:27,674 - WARNING - root - Etwas könnte schiefgehen
+2025-12-22 12:07:27,674 - ERROR - root - Ein Fehler ist aufgetreten
+2025-12-22 12:07:27,674 - CRITICAL - root - Schwerwiegender Fehler, Abbruch nötig
+2025-12-22 12:07:27,690 - INFO - app - Flask App erfolgreich gestartet
+2025-12-22 12:07:27,703 - WARNING - werkzeug -  * Debugger is active!
+2025-12-22 12:07:27,705 - INFO - werkzeug -  * Debugger PIN: 704-404-749
+2025-12-22 12:07:42,360 - INFO - root - GET /items aufgerufen
+2025-12-22 12:07:42,362 - INFO - root - 0 Items zurückgegeben
+2025-12-22 12:07:42,363 - INFO - werkzeug - 127.0.0.1 - - [22/Dec/2025 12:07:42] "GET /items HTTP/1.1" 200 -
+2025-12-22 12:08:05,790 - INFO - root - POST /items aufgerufen mit Daten: {'name': 'TestItem'}
+2025-12-22 12:08:05,796 - INFO - root - Item 'TestItem' in DB gespeichert
+2025-12-22 12:08:05,796 - INFO - root - Item hinzugefügt: TestItem
+2025-12-22 12:08:05,796 - INFO - werkzeug - 127.0.0.1 - - [22/Dec/2025 12:08:05] "[35m[1mPOST /items HTTP/1.1[0m" 201 -
+2025-12-22 12:09:30,565 - INFO - root - GET /items aufgerufen
+2025-12-22 12:09:30,566 - INFO - root - 1 Items zurückgegeben
+2025-12-22 12:09:30,566 - INFO - werkzeug - 127.0.0.1 - - [22/Dec/2025 12:09:30] "GET /items HTTP/1.1" 200 -
+2025-12-22 12:10:03,542 - INFO - root - POST /items aufgerufen mit Daten: {'name': 'NeuesItem'}
+2025-12-22 12:10:03,547 - INFO - root - Item 'NeuesItem' in DB gespeichert
+2025-12-22 12:10:03,548 - INFO - root - Item hinzugefügt: NeuesItem
+2025-12-22 12:10:03,548 - INFO - werkzeug - 127.0.0.1 - - [22/Dec/2025 12:10:03] "[35m[1mPOST /items HTTP/1.1[0m" 201 -
+2025-12-22 12:10:16,053 - INFO - root - POST /items aufgerufen mit Daten: {}
+2025-12-22 12:10:16,053 - WARNING - root - POST /items - fehlende 'name'-Angabe
+2025-12-22 12:10:16,054 - INFO - werkzeug - 127.0.0.1 - - [22/Dec/2025 12:10:16] "[31m[1mPOST /items HTTP/1.1[0m" 400 -
+2025-12-22 12:10:36,583 - INFO - root - POST /items aufgerufen mit Daten: {'name': 'Item2'}
+2025-12-22 12:10:36,587 - INFO - root - Item 'Item2' in DB gespeichert
+2025-12-22 12:10:36,587 - INFO - root - Item hinzugefügt: Item2
+2025-12-22 12:10:36,588 - INFO - werkzeug - 127.0.0.1 - - [22/Dec/2025 12:10:36] "[35m[1mPOST /items HTTP/1.1[0m" 201 -
+2025-12-22 12:10:50,270 - INFO - root - POST /items aufgerufen mit Daten: {'name': 'Item3'}
+2025-12-22 12:10:50,275 - INFO - root - Item 'Item3' in DB gespeichert
+2025-12-22 12:10:50,276 - INFO - root - Item hinzugefügt: Item3
+2025-12-22 12:10:50,276 - INFO - werkzeug - 127.0.0.1 - - [22/Dec/2025 12:10:50] "[35m[1mPOST /items HTTP/1.1[0m" 201 -
+2025-12-22 12:10:59,386 - INFO - root - GET /items aufgerufen
+2025-12-22 12:10:59,387 - INFO - root - 4 Items zurückgegeben
+2025-12-22 12:10:59,387 - INFO - werkzeug - 127.0.0.1 - - [22/Dec/2025 12:10:59] "GET /items HTTP/1.1" 200 -
