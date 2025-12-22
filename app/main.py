@@ -1,19 +1,15 @@
-from flask import Flask, jsonify, request
+from dotenv import load_dotenv
+load_dotenv()
 
-app = Flask(__name__)
+from app import create_app
+from config.config import Config
 
-# Datenbank-Simulation (in-memory)
-items = []
 
-@app.route("/items", methods=["GET"])
-def get_items():
-    return jsonify(items)
-
-@app.route("/items", methods=["POST"])
-def add_items():
-    data = request.json
-    items.append(data)
-    return jsonify({"message": "Item addes" }),201
+app = create_app()
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(
+        debug=Config.DEBUG,
+        host=Config.HOST,
+        port=Config.PORT
+    )
