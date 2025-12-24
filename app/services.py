@@ -1,22 +1,23 @@
 from . import db
 from .models import Item
 import logging
+from app.repositories.item_repository_sqlalchemy import ItemRepository
+
+repo = ItemRepository()
 
 def get_items_service():
     try:
-        items = Item.query.all()
-        return [{"id": i.id, "name": i.name} for i in items]
-    except Exception as e:
-        logging.exception("Fehler beim Abrufen der Items aus DB")
-        raise e
+        return repo.get_all()
+    except Exception:
+        logging.exception("Fehler im Service (get_items)")
+        raise
 
 def add_item_service(data):
+    if "name" not in data or not data["name"]:
+        raise ValueError("Name fehlt")
+
     try:
-        item = Item(name=data["name"])
-        db.session.add(item)
-        db.session.commit()
-        logging.info(f"Item '{data['name']}' in DB gespeichert")
-    except Exception as e:
-        db.session.rollback()
-        logging.exception("Fehler beim Hinzufügen eines Items in DB")
-        raise e
+        repo.add(data["name"])
+    except Exception:
+        logging.exception("Fehler im Service (add_item)")
+        raise

@@ -1,11 +1,15 @@
 from dotenv import load_dotenv
 load_dotenv()
 
-import logging 
+import logging
 from logging.handlers import RotatingFileHandler
 
+# create_app aus app/__init__.py
 from app import create_app
+
+# Config aus config/config.py
 from config.config import Config
+
 from flask import jsonify
 
 

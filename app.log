@@ -114,3 +114,19 @@ werkzeug.exceptions.UnsupportedMediaType: 415 Unsupported Media Type: Did not at
 2025-12-22 12:10:59,386 - INFO - root - GET /items aufgerufen
 2025-12-22 12:10:59,387 - INFO - root - 4 Items zurückgegeben
 2025-12-22 12:10:59,387 - INFO - werkzeug - 127.0.0.1 - - [22/Dec/2025 12:10:59] "GET /items HTTP/1.1" 200 -
+2025-12-24 09:15:45,742 - INFO - root - Server gestartet auf Port 5000
+2025-12-24 09:15:45,743 - WARNING - root - Etwas könnte schiefgehen
+2025-12-24 09:15:45,743 - ERROR - root - Ein Fehler ist aufgetreten
+2025-12-24 09:15:45,743 - CRITICAL - root - Schwerwiegender Fehler, Abbruch nötig
+2025-12-24 09:18:45,361 - INFO - root - Server gestartet auf Port 5000
+2025-12-24 09:18:45,361 - WARNING - root - Etwas könnte schiefgehen
+2025-12-24 09:18:45,361 - ERROR - root - Ein Fehler ist aufgetreten
+2025-12-24 09:18:45,362 - CRITICAL - root - Schwerwiegender Fehler, Abbruch nötig
+2025-12-24 09:20:55,997 - INFO - root - Server gestartet auf Port 5000
+2025-12-24 09:20:55,998 - WARNING - root - Etwas könnte schiefgehen
+2025-12-24 09:20:55,998 - ERROR - root - Ein Fehler ist aufgetreten
+2025-12-24 09:20:55,998 - CRITICAL - root - Schwerwiegender Fehler, Abbruch nötig
+2025-12-24 09:26:35,961 - INFO - root - Server gestartet auf Port 5000
+2025-12-24 09:26:35,961 - WARNING - root - Etwas könnte schiefgehen
+2025-12-24 09:26:35,961 - ERROR - root - Ein Fehler ist aufgetreten
+2025-12-24 09:26:35,961 - CRITICAL - root - Schwerwiegender Fehler, Abbruch nötig
