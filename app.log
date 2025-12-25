@@ -130,3 +130,62 @@ werkzeug.exceptions.UnsupportedMediaType: 415 Unsupported Media Type: Did not at
 2025-12-24 09:26:35,961 - WARNING - root - Etwas könnte schiefgehen
 2025-12-24 09:26:35,961 - ERROR - root - Ein Fehler ist aufgetreten
 2025-12-24 09:26:35,961 - CRITICAL - root - Schwerwiegender Fehler, Abbruch nötig
+2025-12-24 09:28:23,516 - INFO - root - Server gestartet auf Port 5000
+2025-12-24 09:28:23,516 - WARNING - root - Etwas könnte schiefgehen
+2025-12-24 09:28:23,516 - ERROR - root - Ein Fehler ist aufgetreten
+2025-12-24 09:28:23,516 - CRITICAL - root - Schwerwiegender Fehler, Abbruch nötig
+2025-12-24 09:28:23,545 - INFO - app - Flask App erfolgreich gestartet
+2025-12-24 09:28:23,615 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-24 09:28:23,616 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2025-12-24 09:28:23,617 - INFO - werkzeug -  * Restarting with stat
+2025-12-24 09:28:24,026 - INFO - root - Server gestartet auf Port 5000
+2025-12-24 09:28:24,027 - WARNING - root - Etwas könnte schiefgehen
+2025-12-24 09:28:24,027 - ERROR - root - Ein Fehler ist aufgetreten
+2025-12-24 09:28:24,027 - CRITICAL - root - Schwerwiegender Fehler, Abbruch nötig
+2025-12-24 09:28:24,045 - INFO - app - Flask App erfolgreich gestartet
+2025-12-24 09:28:24,055 - WARNING - werkzeug -  * Debugger is active!
+2025-12-24 09:28:24,058 - INFO - werkzeug -  * Debugger PIN: 704-404-749
+2025-12-24 09:29:22,457 - INFO - root - GET /items aufgerufen
+2025-12-24 09:29:22,460 - INFO - root - 4 Items zurückgegeben
+2025-12-24 09:29:22,461 - INFO - werkzeug - 127.0.0.1 - - [24/Dec/2025 09:29:22] "GET /items HTTP/1.1" 200 -
+2025-12-24 09:29:44,223 - ERROR - root - Fehler beim Hinzufügen eines Items
+Traceback (most recent call last):
+  File "C:\Users\UgurK\CLOUD-training\cloud-engineering-backend\app\routes.py", line 21, in add_item
+    data = request.json
+           ^^^^^^^^^^^^
+  File "C:\Users\UgurK\CLOUD-training\cloud-engineering-backend\venv\Lib\site-packages\werkzeug\wrappers\request.py", line 560, in json
+    return self.get_json()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\UgurK\CLOUD-training\cloud-engineering-backend\venv\Lib\site-packages\werkzeug\wrappers\request.py", line 604, in get_json
+    return self.on_json_loading_failed(None)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\UgurK\CLOUD-training\cloud-engineering-backend\venv\Lib\site-packages\flask\wrappers.py", line 214, in on_json_loading_failed
+    return super().on_json_loading_failed(e)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\UgurK\CLOUD-training\cloud-engineering-backend\venv\Lib\site-packages\werkzeug\wrappers\request.py", line 647, in on_json_loading_failed
+    raise UnsupportedMediaType(
+    ...<2 lines>...
+    )
+werkzeug.exceptions.UnsupportedMediaType: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-12-24 09:29:44,247 - INFO - werkzeug - 127.0.0.1 - - [24/Dec/2025 09:29:44] "[35m[1mPOST /items HTTP/1.1[0m" 500 -
+2025-12-24 09:31:37,487 - ERROR - root - Fehler beim Hinzufügen eines Items
+Traceback (most recent call last):
+  File "C:\Users\UgurK\CLOUD-training\cloud-engineering-backend\app\routes.py", line 21, in add_item
+    data = request.json
+           ^^^^^^^^^^^^
+  File "C:\Users\UgurK\CLOUD-training\cloud-engineering-backend\venv\Lib\site-packages\werkzeug\wrappers\request.py", line 560, in json
+    return self.get_json()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\UgurK\CLOUD-training\cloud-engineering-backend\venv\Lib\site-packages\werkzeug\wrappers\request.py", line 604, in get_json
+    return self.on_json_loading_failed(None)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\UgurK\CLOUD-training\cloud-engineering-backend\venv\Lib\site-packages\flask\wrappers.py", line 214, in on_json_loading_failed
+    return super().on_json_loading_failed(e)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\UgurK\CLOUD-training\cloud-engineering-backend\venv\Lib\site-packages\werkzeug\wrappers\request.py", line 647, in on_json_loading_failed
+    raise UnsupportedMediaType(
+    ...<2 lines>...
+    )
+werkzeug.exceptions.UnsupportedMediaType: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-12-24 09:31:37,488 - INFO - werkzeug - 127.0.0.1 - - [24/Dec/2025 09:31:37] "[35m[1mPOST /items HTTP/1.1[0m" 500 -
