@@ -86,6 +86,18 @@ Details zur Infrastruktur befinden sich in:
 
 ---
 
+## Deployment (konzeptionell)
+
+1. Lokales Testing / Unit Tests der Flask-App
+2. Konfiguration über Environment-Variablen (z. B. DB-Pfad, API-Keys)
+3. Provisionierung der Infrastruktur mit Terraform (optional, konzeptionell)
+4. Start der Flask-App auf einer Compute-Instanz (EC2 / VM / Container)
+5. Logging prüfen und Monitoring aufbauen (z. B. CloudWatch, Azure Monitor)
+
+> Hinweis: Dies ist **nur konzeptionell**, kein echtes Deployment nötig.
+
+---
+
 ## Bewusste Vereinfachungen
 
 * Keine produktive Cloud‑Provisionierung
